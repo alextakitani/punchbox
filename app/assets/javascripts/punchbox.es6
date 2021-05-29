@@ -47,7 +47,11 @@ class Punchbox {
 
     if (window.Turbolinks) {
       loadEvent = Turbolinks.EVENTS ? 'page:change' : 'turbolinks:load';
+    } 
+    else if (window.Turbo) {
+      loadEvent = Turbo.EVENTS ? 'page:change' : 'turbo:load';
     } else {
+    else {
       loadEvent = 'DOMContentLoaded';
     }
 
