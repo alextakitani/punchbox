@@ -50,7 +50,7 @@ var Punchbox = function () {
 
       if (window.Turbolinks) {
         loadEvent = Turbolinks.EVENTS ? 'page:change' : 'turbolinks:load';
-      else if (window.Turbo) {
+      } else if (window.Turbo) {
         loadEvent = Turbo.EVENTS ? 'page:change' : 'turbo:load';      
       } else {
         loadEvent = 'DOMContentLoaded';
